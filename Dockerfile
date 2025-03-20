@@ -1,5 +1,7 @@
 FROM node:20-alpine AS base
-
+LABEL org.opencontainers.image.source = "https://github.com/neshmi/yccaster_manager"
+LABEL org.opencontainers.image.description="YCCaster Manager is a web application for managing YCCaster users and mountpoints."
+LABEL org.opencontainers.image.maintainer="Matthew Vincent <matthew@rekrei.org>"
 # Install dependencies only when needed
 FROM base AS deps
 WORKDIR /app
