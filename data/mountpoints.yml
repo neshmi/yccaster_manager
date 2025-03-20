@@ -1,0 +1,22 @@
+- mount-point: mount_point_1
+  password: password
+  description:
+    identifier: mp1
+    format: RTCM 3.2
+    nav-system: GPS+GLONASS+GALILEO+BEIDOU
+    country: ESP
+    latitude: 39.6756
+    longitude: 0.2787
+    nmea: 1
+    generator: Device
+- mount-point: mount_point_2
+  password: password
+  description:
+    identifier: mp2
+    format: RTCM 3.2
+    nav-system: GPS+GLONASS+GALILEO+BEIDOU
+    country: ESP
+    latitude: 39.6756
+    longitude: 0.2787
+    nmea: 1
+    generator: Device

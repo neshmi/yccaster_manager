@@ -1,0 +1,36 @@
+caster:
+  host: ntrip.example.com
+  address: 0.0.0.0:2101
+  port: 2101
+  identifier: ID
+  operator: Company
+  nmea: 1
+  country: ESP
+  latitude: 39.6756
+  longitude: 0.2787
+configuration:
+  auth:
+  - type: file
+    options:
+      mount-points: mountpoints.yml
+      clients: clients.yml
+  api:
+    address: 0.0.0.0:8080
+    api-keys:
+      - apikey_1
+      - apikey_2
+  events:
+  - type: file
+    options:
+      path: /dev/stdout
+      types:
+        - caster-ready
+        - caster-terminate
+        - connection-accepted
+        - connection-terminated
+        - ntrip-request-accepted
+        - ntrip-request-rejected
+        - ntrip-session-started
+        - ntrip-session-ended
+        - caster-status-60
+        - ntrip-session-status-25
